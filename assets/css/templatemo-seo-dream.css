@@ -1870,7 +1870,9 @@ responsive
 
 
 
-
+.profile hr{
+height:3px;
+}
 .heading {
   font-size: 60px;
   color: #4E9F3D;
@@ -1954,6 +1956,7 @@ responsive
 }
 }
 
+
 @media only screen and (max-width: 900px) {
   .heading {
     font-size: 40px;
@@ -1992,53 +1995,163 @@ responsive
 
 
 
-#ceo{
-margin-top:120px;
-}
-.ceo-card {
-    width: 350px;
-    border-radius: 50px;
-    background: #eeeeee;
-    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff;
-    border: none
+.team-3 {
+    margin-bottom: 30px;
 }
 
-.neo-button {
+.team-3 .team-img {
+	width: 35%;
+    position: relative;
+	 margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.team-3 .team-img img {
+    width: 100%;
+    height: auto;
+	
+}
+
+.team-3 .team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .5);
+    transition: all .3s;
+    font-size: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.team-3:hover .team-social {
+    opacity: 1;
+}
+
+.team-3 .team-social a {
+    display: inline-block;
     width: 40px;
     height: 40px;
-    outline: 0 !important;
-    cursor: pointer;
-    color: #fff;
-    font-size: 15px;
-    border: none;
-    margin-right: 10px;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #d6d6d6, #ffffff);
-    box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
+    margin-right: 5px;
+    padding: 11px 0 10px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    color: #ffffff;
+    transition: all .3s;
+    margin-top: 50px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
-.neo-button:active {
-    border-radius: 50%;
-    background: linear-gradient(145deg, #d6d6d6, #ffffff);
-    box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff
+.team-3 .team-social a.social-tw {
+    
+	background: #9AE66E;
 }
 
-.fa-facebook {
-    color: #3b5998
+.team-3 .team-social a.social-fb {
+    background: #CCFFBD;
 }
 
-.fa-linkedin {
-    color: #0077b5
+.team-3 .team-social a.social-li {
+    background: #D8E9A8;
 }
 
-.fa-google {
-    color: #dc4e41
+.team-3 .team-social a.social-in {
+    background: #CCFFBD;
 }
 
-.fa-youtube {
-    color: #cd201f
+.team-3 .team-social a.social-yt {
+    background: #9AE66E;
 }
 
-.fa-twitter {
-    color: #55acee
+.team-3 .team-social a:last-child {
+    margin-right: 0;
+}
+
+.team-3:hover .team-social a {
+    margin-top: 0;
+}
+
+.team-3 .team-social a:hover {
+    color: #222222;
+    background: #4E9F3D;
+}
+
+.team-3 .team-content {
+    padding: 70px 20px 20px 20px;
+    margin-top: -50px;
+    text-align: center;
+    background: #f3f4fa;
+    transition: all .5s;
+}
+
+.team-3:hover .team-content {
+    background: #4E9F3D;
+}
+
+.team-3:hover .team-content h2,
+.team-3:hover .team-content h3,
+.team-3:hover .team-content h4,
+.team-3:hover .team-content p {
+    color: #ffffff;
+}
+
+.team-3 .team-content h2 {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.team-3 .team-content h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.team-3 .team-content h4 {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.team-3 .team-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+@media only screen and (max-width: 1150px) {
+.team-3 .team-img {
+	width: 80%;
+}
+.team-3:hover .team-content {
+    background: #4E9F3D;
+}
+
+.team-3:hover .team-content h2,
+.team-3:hover .team-content h3,
+.team-3:hover .team-content h4,
+.team-3:hover .team-content p {
+    color: #ffffff;
+}
+.team-3:hover .team-social a {
+    margin-top: 0;
+}
+
+.team-3 .team-social a:hover {
+    color: #222222;
+    background: #4E9F3D;
+}
 }
