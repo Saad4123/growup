@@ -112,6 +112,10 @@ html, body {
 
 a {
   text-decoration: none !important;
+  color: #4E9F3D;
+}
+a:hover{
+	color: #1E5128;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -229,7 +233,7 @@ body {
 
 .main-green-button a {
   display: inline-block;
-  background-color: #33ccc5;
+  background-color: #4E9F3D;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -237,14 +241,14 @@ body {
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border-bottom: 2px solid #4771cb!important;
+  border-bottom: 2px solid #1E5128!important;
   transition: all .3s;
 }
 
 .main-green-button a:hover {
-  background-color: #4771cb!important;
+  background-color: #1E5128!important;
   color: #fff!important;
-  border-bottom: 2px solid #33ccc5!important;
+  border-bottom: 2px solid #4E9F3D!important;
 }
 
 
@@ -826,10 +830,13 @@ preloader
   margin: 10px 0 0 0;
   color: #fff;
   background: #4E9F3D;
+  border-bottom: 2px solid #1E5128!important;
+  
 }
 
 #hero .btn-get-started:hover {
   background: #1E5128;
+  border-bottom: 2px solid #4E9F3D!important;
 }
 
 #hero .btn-watch-video {
@@ -965,7 +972,9 @@ Features Style
   border-radius: 50px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
 }
-
+.features-item h4{
+	color:#4E9F3D;
+}
 .features-item {
   text-align: center;
   padding: 30px;
@@ -1057,7 +1066,7 @@ Features Style
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
-  color: #2a2a2a;
+  color: #1E5128;
   position: relative;
   transition: all 0.5s;
 }
@@ -1335,6 +1344,8 @@ About Us Style
   margin: 40px 0px;
 }
 
+
+
 /* 
 ---------------------------------------------
 Services Style
@@ -1609,7 +1620,7 @@ form#contact button {
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
-  border-bottom: 2px solid #4771cb!important;
+  border-bottom: 2px solid #1E5128!important;
   transition: all .3s;
   outline: none;
   border: none;
@@ -1618,7 +1629,7 @@ form#contact button {
 form#contact button:hover {
   background-color: #1E5128!important;
   color: #fff!important;
-  border-bottom: 2px solid #33ccc5!important;
+  border-bottom: 2px solid #4E9F3D!important;
 }
 
 /* 
@@ -1760,7 +1771,11 @@ responsive
 
 
 
-
+/* 
+---------------------------------------------
+team
+--------------------------------------------- 
+*/
 
 
 
@@ -2098,7 +2113,9 @@ height:3px;
 .team-3:hover .team-content {
     background: #4E9F3D;
 }
-
+.team-content h2{
+	color: #4E9F3D;
+}
 .team-3:hover .team-content h2,
 .team-3:hover .team-content h3,
 .team-3:hover .team-content h4,
@@ -2154,4 +2171,74 @@ height:3px;
     color: #222222;
     background: #4E9F3D;
 }
+}
+
+
+
+
+/*
+
+
+*/
+
+.tophead 
+{
+  text-align: center;
+  font-size: 72px;
+  color: rgba(2, 91, 141, 0.9);
+  padding-bottom: 20px;
+}
+.vissionv
+{
+  color: #1acf9a;
+}
+.viss
+{
+  font-size: 2.3rem;
+}
+.ourvision
+{
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-left: auto ;
+  margin-right: auto;
+  padding: 2% 5%;
+  width: 98%;
+  text-align: center;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1E5128;
+  -webkit-box-shadow: 0px 2px 16px 5px #1E5128; 
+box-shadow: 0px 2px 16px 5px #1E5128;
+  border-radius: 20px 0px 20px 0px;
+  background-color: #4E9F3D;
+  color: lightgrey;
+}
+@media (max-width: 991px)
+{
+  .vissionv
+  {
+    color: #1acf9a;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .tophead 
+  {
+    text-align: center;
+    font-size: 48px;
+    color: rgba(2, 91, 141, 0.9);
+
+    margin-top: 15%;
+    padding-top: 2%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .ourvision 
+  {
+    padding: 0%;
+    padding-top: 15%;
+    padding-bottom: 8%;
+    transform: scale(0.8);
+    color: white;
+  }
 }
