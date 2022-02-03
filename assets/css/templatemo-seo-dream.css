@@ -988,8 +988,8 @@ Features Style
 }
 
 .features-item:hover {
-  background: #9AE66E;
-  background: linear-gradient(105deg, #9AE66E 0%, #9AE66E 100%);
+  background: rgb(51,204,197);
+  background: linear-gradient(105deg, rgba(51,204,197,1) 0%, rgba(8,141,195,1) 100%);
 }
 
 .features-item:hover h4 {
@@ -1137,7 +1137,7 @@ Features Style
   border-style: solid;
   position: absolute;
   top: 0;
-  border-color: #fd6a54;
+  border-color: #1E5128;
 }
 .progress .progress-left .progress-bar {
   left: 100%;
