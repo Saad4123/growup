@@ -302,11 +302,40 @@ header
 
 .header-area .main-nav {
   min-height: 80px;
-  background: #191A19;
+  background: #171a18;
 
   /* background: transparent; */
 }
+.header-area .main-nav .logo {
+  float: left;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
 
+.header-area .main-nav .logo h4 {
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 80px;
+    float: left;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.header-area .main-nav .logo h4 img {
+  max-width: 100px;
+  margin-top: -07px;
+  margin-left: 5px;
+}
+
+.background-header .main-nav .logo h4 {
+  line-height: 80px;
+}
 
 .header-area .main-nav .logo {
 	margin-left:60px;
@@ -465,7 +494,7 @@ header
   z-index: 99;
   right: 40px;
   display: none;
-  color:white;
+  color:#4E9F3D;
 }
 
 .header-area .main-nav .menu-trigger span,
@@ -539,6 +568,7 @@ header
 .header-area .main-nav .menu-trigger.active span:before,
 .header-area .main-nav .menu-trigger.active span:after {
   /* background-color: transparent; */
+  background-color: #4E9F3D;
   width: 100%;
 }
 
@@ -577,6 +607,7 @@ header
 .header-area.header-sticky .nav li a.active {
   color: #4E9F3D;
 }
+
 
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
@@ -794,7 +825,7 @@ preloader
 #hero {
   width: 100%;
   height: 100vh;
-  background: #191A19;
+  background: #171a18;
   padding-bottom:15px;
 
 }
@@ -900,7 +931,9 @@ preloader
 
 @media (max-width: 575px) {
   #hero .hero-img img {
-    width: 80%;
+    width: 950%;
+	margin-bottom:150px;
+	height:80%;
   }
   #hero .btn-get-started {
     font-size: 16px;
@@ -1392,8 +1425,8 @@ Services Style
 }
 
 .service-item .icon img {
-    width: 38px;
-    height: 38px;
+    width: 48px;
+    height: 44px;
 }
 
 .service-item h4 {
@@ -1667,8 +1700,9 @@ responsive
     font-size: 24px;
   }
   .header-area .main-nav .logo h4 img {
-    max-width: 25px;
+    max-width: 100px;
     margin-left: 0px;
+	margin-top:3px;
   }
   .header-area .main-nav .nav li:last-child {
     padding-left: 20px;
@@ -1730,8 +1764,9 @@ responsive
     font-size: 30px;
   }
   .header-area .main-nav .logo h4 img {
-    max-width: 30px;
-    margin-left: 5px;
+    max-width: 110px;
+    margin-left: 0px;
+	margin-top: 3px;
   }
   .main-banner .info-stat {
     margin-bottom: 15px;
@@ -1885,8 +1920,12 @@ team
 
 
 
-.profile hr{
-height:3px;
+hr.new1 {
+  border: 2px solid #4E9F3D;
+  filter: grayscale(100%);
+}
+.profile:hover hr.new1 {
+  filter: grayscale(0);
 }
 .heading {
   font-size: 60px;
@@ -1902,7 +1941,7 @@ height:3px;
 .profiles {
   display: flex;
   justify-content: space-around;
-  margin: 20px 80px;
+  margin: 20px 0px;
 }
 
 .profile {
@@ -1970,6 +2009,9 @@ height:3px;
   filter: grayscale(0);
 }
 }
+hr.new1 {
+  border: 2px solid #4E9F3D;
+}
 
 
 @media only screen and (max-width: 900px) {
@@ -1997,6 +2039,9 @@ height:3px;
   filter: grayscale(0%);
   cursor: pointer;
   transition: 400ms;
+}
+hr.new1 {
+  border: 2px solid #4E9F3D;
 }
 }
 
@@ -2190,7 +2235,7 @@ height:3px;
 }
 .vissionv
 {
-  color: #1acf9a;
+  color: white;
 }
 .viss
 {
@@ -2200,25 +2245,25 @@ height:3px;
 {
   margin-top: 0%;
   margin-bottom: 1%;
-  margin-left: auto ;
-  margin-right: auto;
+  margin-left: 40px ;
+  margin-right: 40px;
   padding: 2% 5%;
-  width: 98%;
+  width: auto;
   text-align: center;
-  border-width: 5px;
+  border-width: 3px;
   border-style: solid;
   border-color: #1E5128;
   -webkit-box-shadow: 0px 2px 16px 5px #1E5128; 
 box-shadow: 0px 2px 16px 5px #1E5128;
   border-radius: 20px 0px 20px 0px;
   background-color: #4E9F3D;
-  color: lightgrey;
+  color: white;
 }
 @media (max-width: 991px)
 {
   .vissionv
   {
-    color: #1acf9a;
+    color: white;
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
@@ -2238,7 +2283,14 @@ box-shadow: 0px 2px 16px 5px #1E5128;
     padding: 0%;
     padding-top: 15%;
     padding-bottom: 8%;
-    transform: scale(0.8);
     color: white;
   }
 }
+
+
+
+/* 
+---------------------------------------------
+Testinomial
+--------------------------------------------- 
+*/
