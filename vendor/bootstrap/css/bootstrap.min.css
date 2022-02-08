@@ -564,6 +564,7 @@ progress {
 }
 
 .img-fluid {
+margin-top:70px;	
   max-width: 100%;
   height: auto;
 }
