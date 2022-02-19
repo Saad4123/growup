@@ -3,12 +3,19 @@
 	 padding:36px 30px;
 	 display:flex;
 	 justify-content:space-between;
-	 flex-wrap:wrap;
 	 -webkit-transition:.4s;
 	 -moz-transition:.4s;
 	 -o-transition:.4s;
 	 transition:.4s
 	 }
+	 }
+			 .single-job-items .company-img
+			 {
+			 overflow:hidden;
+			 float:left;
+			 margin-right:32px;
+			 z-index:999
+			 }
 	 .section-tittle h2{color:#28395a;font-size:50px;font-weight:700;line-height:1.2;margin-bottom:55px}
 	 @media only screen and (min-width: 768px) and (max-width: 991px){
 		 .single-job-items{padding:20px 7px}
@@ -83,9 +90,10 @@ items-link{
 		display:block;
 		border:1px solid #4E9F3D;
 		border-radius:30px;
-		padding:4px 33px;
 		text-align:center;
-		margin-bottom:25px
+		margin-bottom:25px;
+		width:100px;
+		height:30px;
 		}
 		@media only screen and (min-width: 768px) and (max-width: 991px){
 			.items-link a{padding:4px 19px}}
