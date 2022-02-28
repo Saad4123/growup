@@ -1021,29 +1021,13 @@ Features Style
 }
 
 .features-item:hover {
-  background: #1E5128;
-  background: linear-gradient(105deg, #1E5128 0%, #1E5128 50%);
+ border-radius: 50px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
 }
 
-.features-item:hover h4 {
-  color: #fff;
-}
 
-.features-item:hover p {
-  color: #fff;
-}
 
-.features-item:hover .line-dec {
-  background-color: rgba(255,255,255,0.3);
-}
 
-.first-feature:hover .icon {
-  background-image: url(../images/features-icon-white-01.png);
-}
-
-.second-feature:hover .icon {
-  background-image: url(../images/features-icon-white-02.png);
-}
 
 .features-item .number h6 {
   background-repeat: no-repeat;
@@ -1090,17 +1074,21 @@ Features Style
 	border-bottom: 4px solid #1E5128!important;
     transition: all .3s;
 }
-
 .first-feature .icon {
-  background-image: url(../images/features-icon-black-01.png);
+align-items:center;
+}
+.first-feature .icon img {
+	height:80px;
+	width:120px;
 }
 
 .second-feature .icon {
-  background-image: url(../images/features-icon-black-02.png);
+	height:80px;
+	width:120px;
 }
 
 .features-item .icon {
-  width: 63px;
+  
   height: 63px;
   margin: 0 auto;
   transition: all 0.5s;
@@ -1427,6 +1415,13 @@ Services Style
 #service-vc  img {
     width: 130px;
     height: 80px;
+}
+#service-in  img {
+    width: 100px;
+    height: 80px;
+	 align-items:center;
+	margin-left:auto;
+	margin-right:auto;
 }
 .service-img {
     align-items:center;
@@ -1870,5 +1865,27 @@ responsive
 }
 
 
+.privacy-top
+{
+	background-color: rgb(245,244,244, 80%)
+}
+.p-content
+{
+
+}
+.privacy-inner
+{
+	border-radius: 15px;
+	-webkit-box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.51); 
+	box-shadow: 1px 2px 15px 5px rgba(0,0,0,0.51);
+	background-color: white;
+	width: 70%;
+	margin: 0 auto;
+	padding: 2% 5%;
+}
+.cen
+{
+	text-align: center;
+}
 
 
