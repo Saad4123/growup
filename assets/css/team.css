@@ -254,7 +254,9 @@ img {
 .team-5 {
     margin-bottom: 30px;
 }
-
+.team-5:hover{
+transform: scale(1.1);
+}
 .team-5 .team-img {
     position: relative;
     font-size: 0;
